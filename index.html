@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <style>
-
     .mdc-toolbar__row:first-child::after {
       background-image: url("./Profile.jpg");
-      background-size: cover;
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
     }
   </style>
 
@@ -23,6 +23,7 @@
 <body class="mdc-typography">
 
   <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only mdc-toolbar--waterfall mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior">
+    <div class="mdc-toolbar__row"></div>
     <div class="mdc-toolbar__row">
       <section class="mdc-toolbar__section">
         <span class="mdc-toolbar__title">Shih-Chuan "Leo" Ku</span>
