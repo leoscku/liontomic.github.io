@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html class="mdc-typography">
-  <head>
-    <title>Material Components for the web</title>
-    <link rel="stylesheet"
-          href="node_modules/material-components-web/dist/material-components-web.css">
-  </head>
-  <body>
-    <h2 class="mdc-typography--display2">Hello, Material Components!</h2>
-    <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-      <input type="text" class="mdc-textfield__input" id="demo-input">
-      <label for="demo-input" class="mdc-textfield__label">Tell us how you feel!</label>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shih-Chuan "Leo" Ku</title>
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <style>
+
+    .mdc-toolbar__row:first-child::after {
+      background-image: url("./Profile.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+</head>
+
+<body class="mdc-typography">
+
+  <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only mdc-toolbar--waterfall mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior">
+    <div class="mdc-toolbar__row">
+      <section class="mdc-toolbar__section">
+        <span class="mdc-toolbar__title">Shih-Chuan "Leo" Ku</span>
+      </section>
     </div>
-    <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
-    <script>mdc.autoInit()</script>
-  </body>
+    <div class="mdc-toolbar__row">
+      <section class="mdc-toolbar__section mdc-toolbar__section" role="toolbar">
+        <nav class="mdc-tab-bar">
+          <a class="mdc-tab mdc-tab--active" href="#one">Home</a>
+          <a class="mdc-tab" href="#two">Portfolio</a>
+          <a class="mdc-tab" href="#three">About Us</a>
+          <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+      </section>
+    </div>
+  </header>
+
+  <main class="mdc-toolbar-fixed-adjust">
+  <p>
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+  </p>
+  <p class="mdc-typography--body1">
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+  </p>
+  <p class="mdc-typography--body1">
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+  </p>
+
+</main>
+
+
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script>
+  mdc.autoInit()
+  var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+  toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+
+
+  </script>
+
+</body>
+
 </html>
