@@ -1,69 +1,61 @@
 <!DOCTYPE html>
-<html class="mdc-typography">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Shih-Chuan "Leo" Ku</title>
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <style>
-    .mdc-toolbar__row:first-child::after {
-      background-image: url("./profile.jpg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  </style>
-
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="mdc-typography">
+<body class="grey darken-4 white-text">
 
-  <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only mdc-toolbar--waterfall mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior">
-    <div class="mdc-toolbar__row"></div>
-    <div class="mdc-toolbar__row">
-      <section class="mdc-toolbar__section">
-        <span class="mdc-toolbar__title">Shih-Chuan "Leo" Ku</span>
-      </section>
-    </div>
-    <div class="mdc-toolbar__row">
-      <section class="mdc-toolbar__section mdc-toolbar__section" role="toolbar">
-        <nav class="mdc-tab-bar">
-          <a class="mdc-tab mdc-tab--active" href="#one">Home</a>
-          <a class="mdc-tab" href="#two">Portfolio</a>
-          <a class="mdc-tab" href="#three">Contact</a>
-          <span class="mdc-tab-bar__indicator"></span>
-        </nav>
-      </section>
-    </div>
-  </header>
+  <div class="navbar-fixed">
+    <nav class="grey darken-3">
+      <div class="nav-wrapper container">
+        <a href="#" data-target="sideNav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="index.html"><h5 href="#!" class="left">Shih-Chuan "Leo" Ku</h5></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  <main class="mdc-toolbar-fixed-adjust">
-  <p>
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-  </p>
-  <p class="mdc-typography--body1">
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-  </p>
-  <p class="mdc-typography--body1">
-    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
-  </p>
+  <ul class="sidenav grey darken-3" id="sideNav">
+    <li><a class="white-text" href="#">About</a></li>
+    <li><a class="white-text" href="#">Portfolio</a></li>
+    <li><a class="white-text" href="#">Contact</a></li>
+  </ul>
 
-</main>
+  <div class="section container center-align">
+      <div class="row">
+        <img class="circle" style="max-width: 15%; max-height:15%" src="./profile.jpg" alt="">
+        <h4>Shih-Chuan "Leo" Ku</h4>
+        <p>Second year student studying Computer Science B.S. with a Music minor at UCSD.</p>
+        <i>Developer, Engineer, Musician, Dreamer</i>
+      </div>
+  </div>
+  <div class="section white black-text">
+      <div class="container">
+        <h5>Welcome!</h5>
+        <p>Hello! I'm Leo Ku and I am a student developer studying Computer Science
+        at UCSD with a passion of coding, hacking, and solving problems. My
+        journey in computer science started in high school where I took a course in
+        C.</p>
+      </div>
+  </div>
 
-
-  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-  <script>
-  mdc.autoInit()
-  var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
-  toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-
-
-  </script>
-
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
