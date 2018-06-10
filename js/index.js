@@ -3,7 +3,7 @@ $(function() {
   $("#navbar-container").load("navbar.html");
 });
 
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-     $('.materialboxed').materialbox();
+$(document).ready(function() {
+  $('.sidenav').sidenav();
+  $('.materialboxed').materialbox();
 });
